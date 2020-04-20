@@ -1,6 +1,15 @@
 div.app {
   align-items: initial;
-  background: #8888ad;
+  background: url(../assets/images/bg.png);
+
+  div.divider {
+    color: #1e529f;
+    width: 10px;
+    font-size: 30px;
+    background: #b2b2b2;
+    margin: 0;
+    top: 0;
+  }
 }
 
 .flex-column {

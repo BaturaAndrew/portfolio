@@ -19,37 +19,28 @@ export default class Header extends Component {
 
           <Link
             activeClass="active"
-            to="contacts"
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-100}>
-            contacts
-          </Link>
-
-          <Link
-            activeClass="active"
             to="projects"
             spy={true}
             smooth={true}
             duration={500}
             offset={-100}>
-            projects
+            Projects
           </Link>
 
           <Link
             activeClass="active"
-            to="footer"
+            to="contacts"
             spy={true}
             smooth={true}
-            duration={500}>
-            footer
+            duration={500}
+            offset={-100}>
+            Contacts
           </Link>
         </div>
 
         <div className="flex-column">
           <div className="profile-detail" data-aos="zoom-out">
-            <span className="name">Batura Andrew</span>
+            <span className="name">CV Batura Andrew</span>
           </div>
         </div>
       </div>

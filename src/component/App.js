@@ -11,7 +11,7 @@ import 'aos/dist/aos.css';
 class App extends Component {
   componentDidMount() {
     AOS.init({
-      duration: 2000,
+      duration: 3000,
     });
   }
   render() {
@@ -19,8 +19,8 @@ class App extends Component {
       <div className="app flex-column">
         <Header />
         <About />
-        <Contacts />
         <Projects />
+        <Contacts />
         <Footer />
       </div>
     );

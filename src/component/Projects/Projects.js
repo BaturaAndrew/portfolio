@@ -1,19 +1,66 @@
 import React, {Component} from 'react';
 import './Projects.scss';
 
+import {Card,Divider} from 'antd';
+const {Meta} = Card;
+
 export default class Projects extends Component {
   render() {
     return (
-      <div id="projects" className="projects-section">
-        <h3>About my experience</h3>I am working at the united institute of
-        informatic problems, in the laboratory of automation of technological
-        processes. I develop software for automatic creating sketches of
-        technological operations. Currenly I am working for Organizational and
-        Technological Solutions as software engineer. I also studied
-        independently node.js, an example in the gallery-task
-        <h3>Education</h3>I graduated from BNTU with a specialty in automated
-        design system faculty of information technologies and robotics I
-        finished ABAP courses at LeverX in 2015.
+      <div>
+        <Divider orientation="left" className="divider">
+          Projects
+        </Divider>
+        <div id="projects" className="projects-section flex-row">
+          <Card
+            className="card"
+            hoverable
+            style={{width: 240}}
+            cover={
+              <img
+                alt="example"
+                src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+              />
+            }>
+            <Meta title="Europe Street beat" description="www.instagram.com" />
+          </Card>
+          <Card
+            className="card"
+            hoverable
+            style={{width: 240}}
+            cover={
+              <img
+                alt="example"
+                src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+              />
+            }>
+            <Meta title="Europe Street beat" description="www.instagram.com" />
+          </Card>
+          <Card
+            className="card"
+            hoverable
+            style={{width: 240}}
+            cover={
+              <img
+                alt="example"
+                src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+              />
+            }>
+            <Meta title="Europe Street beat" description="www.instagram.com" />
+          </Card>
+          <Card
+            className="card"
+            hoverable
+            style={{width: 240}}
+            cover={
+              <img
+                alt="example"
+                src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+              />
+            }>
+            <Meta title="Europe Street beat" description="www.instagram.com" />
+          </Card>
+        </div>
       </div>
     );
   }
