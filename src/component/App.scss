@@ -6,8 +6,8 @@ div.app {
     color: #1e529f;
     width: 10px;
     font-size: 30px;
-    background: #b2b2b2;
     margin: 0;
+    margin-top: 50px;
     top: 0;
   }
 }
@@ -26,14 +26,13 @@ div.app {
   align-items: center;
 }
 
-::-webkit-scrollbar-thumb {
-  border-radius: 2px;
-  background-color: rgb(4, 62, 100);
-  cursor: pointer;
-}
-
-
 ::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 8px;
+
+  &-thumb {
+    border-radius: 2px;
+    background-color: rgb(4, 62, 100);
+    cursor: pointer;
+  }
 }
