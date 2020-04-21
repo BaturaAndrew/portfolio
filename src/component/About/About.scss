@@ -10,6 +10,7 @@
     &__ava {
       margin: 50px 100px;
       width: 20%;
+      filter: saturate(50%);
     }
 
     &__text {
@@ -17,7 +18,7 @@
       width: 50%;
       padding: 10px;
       font-size: 1.6vw;
-      background-color: rgba(223, 241, 241, 0.4);
+      background-color: rgba(223, 241, 241, 0.2);
       border-radius: 4px;
     }
   }

@@ -12,7 +12,8 @@
   .card {
     margin: 20px 20px;
     width: 300px;
-    height: 400px;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+    background-size: cover;
 
     a {
       color: black;
@@ -27,51 +28,11 @@
     }
 
     &__img {
-      height: 250px;
+      height: 90%;
     }
+  }
 
-    .piskel {
-      background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5)),
-        url(./assets/piskel.jpg);
-      background-size: cover;
-    }
-
-    .piskel:hover {
-      background: url(./assets/piskel.jpg);
-      background-size: cover;
-    }
-
-    .weather {
-      background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5)),
-        url(./assets/fancy-weather.jpg);
-      background-size: cover;
-    }
-
-    .weather:hover {
-      background: url(./assets/fancy-weather.jpg);
-      background-size: cover;
-    }
-
-    .neutron {
-      background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5)),
-        url(./assets/neutron.jpg);
-      background-size: cover;
-    }
-
-    .neutron:hover {
-      background: url(./assets/neutron.jpg);
-      background-size: cover;
-    }
-
-    .tic-tac-toe {
-      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)),
-        url(./assets/tic-tac-toe.jpg);
-      background-size: cover;
-    }
-
-    .tic-tac-toe:hover {
-      background: url(./assets/tic-tac-toe.jpg);
-      background-size: cover;
-    }
+  .card:hover {
+    background: none;
   }
 }

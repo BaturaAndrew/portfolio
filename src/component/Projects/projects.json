@@ -1,0 +1,34 @@
+[
+  {
+    "imgName": "piskel",
+    "imgSrc": "piskel.jpg",
+    "ginHub": "https://github.com/BaturaAndrew/simple-piskel-clone",
+    "appLink": "https://zealous-galileo-5bdad2.netlify.app/",
+    "title": "Piskel",
+    "description": "..."
+  },
+  {
+    "imgName": "weather",
+    "imgSrc": "fancy-weather.jpg",
+    "ginHub": "https://github.com/BaturaAndrew/fancy-weather",
+    "appLink": "https://serene-euler-e304e0.netlify.app/",
+    "title": "Fancy weather",
+    "description": "..."
+  },
+  {
+    "imgName": "neutron",
+    "imgSrc": "neutron.jpg",
+    "ginHub": "https://github.com/BaturaAndrew/neutronmail",
+    "appLink": "https://baturaandrew.github.io/neutronmail/",
+    "title": "Neutron",
+    "description": "..."
+  },
+  {
+    "imgName": "ticTacToe",
+    "imgSrc": "tic-tac-toe.jpg",
+    "ginHub": "https://github.com/BaturaAndrew/tic_tac_toe",
+    "appLink": "https://peaceful-sammet-a142f9.netlify.com",
+    "title": "Tic-tac-toe",
+    "description": "..."
+  }
+]
