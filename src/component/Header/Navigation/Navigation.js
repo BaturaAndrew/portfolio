@@ -2,12 +2,13 @@ import React from 'react';
 import {Link} from 'react-scroll';
 import './Navigation.scss';
 
- const Navigation = () => {
+const Navigation = () => {
   return (
     <div className="navigation flex-row">
       <Link to="hello" smooth={true} offset={-80} duration={500}>
         Hello
       </Link>
+
       <Link to="about" smooth={true} offset={-80} duration={500}>
         About
       </Link>

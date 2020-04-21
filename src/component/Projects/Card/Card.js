@@ -2,7 +2,9 @@ import React from 'react';
 import './Card.scss';
 import {Card, Button} from 'antd';
 import {FundProjectionScreenOutlined, GithubOutlined} from '@ant-design/icons';
+
 const {Meta} = Card;
+
 const CardProject = props => {
   return (
     <Card
@@ -14,7 +16,7 @@ const CardProject = props => {
         <img
           className="card__img"
           alt={props.imgName}
-          src={require(`../assets/${props.imgSrc}`)}
+          src={require(`../assets/images/${props.imgSrc}`)}
         />
       }
       actions={[

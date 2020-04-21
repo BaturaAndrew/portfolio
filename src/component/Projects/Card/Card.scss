@@ -1,0 +1,22 @@
+  div.card {
+    margin-right: 20px;
+    width: 300px;
+
+    a {
+      color: black;
+    }
+
+    a:hover {
+      color: blue;
+    }
+
+    .ant-card-actions {
+      border-bottom: 2px solid #a7a0a0;
+    }
+
+    &__img {
+      height: 90%;
+    }
+
+
+  }

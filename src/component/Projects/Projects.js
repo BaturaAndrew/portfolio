@@ -6,7 +6,7 @@ import CardProject from './Card/Card.js';
 
 export default class Projects extends Component {
   state = {
-    projects: require('./projects.json'),
+    projects: require('./assets/projects.json'),
   };
   render() {
     return (

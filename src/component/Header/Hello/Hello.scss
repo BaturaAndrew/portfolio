@@ -1,5 +1,5 @@
 .header-section {
-  background: fixed center no-repeat url(../../assets/images/image6.jpg);
+  background: fixed center no-repeat url(../../../assets/images/image6.jpg);
   background-size: cover;
   width: 90%;
   margin: auto;
@@ -20,25 +20,23 @@
 
     .name {
       font-size: 2.5vw;
-
     }
 
     .hello {
       width: 65%;
       font-size: 2vw;
-
     }
-
   }
 
   a.cv {
     margin-bottom: 140px;
-    font-size: 4vw;
+    font-size: 3vw;
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     color: rgb(12, 46, 78);
+
+    &:hover {
+      color: rgb(32, 28, 255);
+    }
   }
 
-  a.cv:hover {
-    color: rgb(32, 28, 255);
-  }
 }
