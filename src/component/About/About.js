@@ -10,15 +10,15 @@ export default class About extends Component {
           <Divider orientation="left" className="divider">
             About my experience
           </Divider>
-          <div className=" flex-row">
+          <div className="about-me flex-row">
             <img
-              className="ava"
+              className="about-me__ava"
               src={ava}
               data-aos="zoom-out-right"
               data-aos-duration="500"
             />
             <div
-              className="about-me"
+              className="about-me__text"
               data-aos="zoom-out-left"
               data-aos-duration="500">
               I am working at the united institute of informatic problems, in

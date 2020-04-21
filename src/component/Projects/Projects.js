@@ -21,13 +21,15 @@ export default class Projects extends Component {
             cover={<img className="card__img piskel" />}
             actions={[
               <Button
-                href="https://github.com/BaturaAndrew/tic_tac_toe"
+                href="https://github.com/BaturaAndrew/simple-piskel-clone"
                 target="_blank"
+                type="link"
                 icon={<GithubOutlined />}
               />,
               <Button
-                href="https://peaceful-sammet-a142f9.netlify.com"
+                href="https://zealous-galileo-5bdad2.netlify.app/"
                 target="_blank"
+                type="link"
                 icon={<FundProjectionScreenOutlined />}
               />,
             ]}>
@@ -41,11 +43,14 @@ export default class Projects extends Component {
             cover={<img className="card__img weather" />}
             actions={[
               <Button
-                href="https://github.com/BaturaAndrew/tic_tac_toe"
+                type="link"
+                href="https://github.com/BaturaAndrew/fancy-weather"
+                target="_blank"
                 icon={<GithubOutlined />}
               />,
               <Button
-                href="https://peaceful-sammet-a142f9.netlify.com"
+                type="link"
+                href="https://serene-euler-e304e0.netlify.app/"
                 target="_blank"
                 icon={<FundProjectionScreenOutlined />}
               />,
@@ -60,12 +65,14 @@ export default class Projects extends Component {
             cover={<img className="card__img neutron" />}
             actions={[
               <Button
-                href="https://github.com/BaturaAndrew/tic_tac_toe"
+                type="link"
+                href="https://github.com/BaturaAndrew/neutronmail"
                 target="_blank"
                 icon={<GithubOutlined />}
               />,
               <Button
-                href="https://peaceful-sammet-a142f9.netlify.com"
+                type="link"
+                href="https://baturaandrew.github.io/neutronmail/"
                 target="_blank"
                 icon={<FundProjectionScreenOutlined />}
               />,
@@ -80,11 +87,13 @@ export default class Projects extends Component {
             cover={<img className="card__img tic-tac-toe" />}
             actions={[
               <Button
+                type="link"
                 href="https://github.com/BaturaAndrew/tic_tac_toe"
                 target="_blank"
                 icon={<GithubOutlined />}
               />,
               <Button
+                type="link"
                 href="https://peaceful-sammet-a142f9.netlify.com"
                 target="_blank"
                 icon={<FundProjectionScreenOutlined />}

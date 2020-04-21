@@ -4,16 +4,21 @@
   margin: auto;
   box-shadow: 0px -10px 10px 15px rgba(0, 0, 0, 0.5),
     inset 0px -7px 15px 0px rgba(0, 0, 0, 0.5);
-}
 
-.about-me {
-  position: relative;
-  width: 80%;
-  margin: 50px 50px;
-  font-size: 25px;
-}
+  .about-me {
+    justify-content: flex-start;
+    &__ava {
+      margin: 50px 100px;
+      width: 20%;
+    }
 
-.ava {
-  margin: 10px 30px;
-  width: 20%;
+    &__text {
+      position: relative;
+      width: 50%;
+      padding: 10px;
+      font-size: 1.6vw;
+      background-color: rgba(223, 241, 241, 0.4);
+      border-radius: 4px;
+    }
+  }
 }
