@@ -24,12 +24,12 @@ const Hello = () => {
         </p>
       </div>
       <Button
+        data-aos="zoom-out"
+        data-aos-duration="500"
         className="cv"
         type="link"
         target="_blank"
-        href="https://drive.google.com/open?id=1hkyVRZEgIJPPvPhPVTmjhMJaHwFXb_90"
-        data-aos="zoom-out-left"
-        data-aos-duration="500">
+        href="https://drive.google.com/open?id=1hkyVRZEgIJPPvPhPVTmjhMJaHwFXb_90">
         link to my CV
       </Button>
     </div>

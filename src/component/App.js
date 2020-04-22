@@ -14,6 +14,7 @@ class App extends Component {
       duration: 3000,
     });
   }
+
   render() {
     return (
       <div className="app flex-column">

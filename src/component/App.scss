@@ -2,13 +2,12 @@ div.app {
   align-items: initial;
   background: url(../assets/images/bg.png);
 
-  div.divider {
-    color: #e1eaf9;
-    width: 10px;
+  .divider {
+    color: #9dbff7;
     font-size: 30px;
-    margin: 0;
-    margin-top: 50px;
-    top: 0;
+    margin-top: 15px;
+    margin-left: 20px;
+    text-decoration: underline;
   }
 }
 

@@ -10,7 +10,7 @@ const Project = props => {
     // FIXME:  use a function instead of 'a' tag
     // https://stackoverflow.com/questions/42561137/link-cannot-appear-as-a-descendant-of-a-link
     <a
-      componentclass="span"
+      className="filter"
       href={props.appLink}
       target="_blank"
       rel="noopener noreferrer">

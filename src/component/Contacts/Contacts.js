@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './Contacts.scss';
-import {Divider} from 'antd';
 import {Form, Input, Button, message} from 'antd';
 import {SendOutlined} from '@ant-design/icons';
 
@@ -67,9 +66,7 @@ export default class Contacts extends Component {
   render() {
     return (
       <div id="contacts" className="contacts-section">
-        <Divider orientation="left" className="divider">
-          contacts
-        </Divider>
+        <div className="divider">contacts</div>
 
         <Form
           ref={this.form}
