@@ -19,14 +19,16 @@
       filter: saturate(50%);
 
       @media screen and (max-width: 750px) {
-        display: none;
+        margin: 20px 20px;
+        width: 60%;
       }
     }
 
     &__text {
+
       position: relative;
-      width: 50%;
       padding: 10px;
+      margin-bottom: 20px;
       font-size: 1.6vw;
       background-color: rgba(223, 241, 241, 0.2);
       border-radius: 4px;
