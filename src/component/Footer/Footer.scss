@@ -1,6 +1,5 @@
 .footer-section {
   width: 100%;
-  // height: 100px;
   background: repeat url(./assets/bg_footer.gif);
 
   .contact-container {
@@ -8,38 +7,56 @@
     flex-wrap: wrap;
     margin-left: 150px;
 
-    .github,
-    .gmail,
-    .skype,
-    .phone {
-      margin: 25px;
+    @media screen and (max-width: 700px) {
+      flex-wrap: nowrap;
+      margin-left: 20px;
+    }
+
+    .contact {
       color: white;
-      width:200px;
+      text-decoration: none;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      font-size: 0.8em;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      width: 250px;
 
-      a {
-        color: white;
-        text-decoration: none;
-        margin-bottom: 5px;
-        font-size: 0.8em;
-        margin-bottom: 5px;
+      span {
+        margin-left: 10px;
+
+        @media screen and (max-width: 700px) {
+          display: none;
+        }
       }
 
-      &:hover {
-        cursor: pointer;
-      }
+      .github,
+      .gmail,
+      .skype,
+      .phone {
 
-      &:before {
-        position: relative;
-        left: 0px;
-        margin-right: 5px;
-        top: 8px;
-        filter: sepia();
-      }
+        @media screen and (max-width: 700px) {
+          margin: 10px;
+        }
 
-      &:hover:before {
-        filter: none;
-      }
+        &:hover {
+          cursor: pointer;
+        }
 
+        &:before {
+          position: relative;
+          left: 0px;
+          margin-right: 5px;
+          top: 8px;
+          filter: sepia();
+        }
+
+        &:hover:before {
+          filter: none;
+        }
+      }
     }
 
     .github:before {
@@ -60,4 +77,36 @@
     }
 
   }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+
+    @media screen and (min-width: 700px) {
+       display: none;
+    }
+
+    .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: rgb(182, 179, 179);
+      color: rgb(34, 34, 34);
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+
+      position: absolute;
+      z-index: 1;
+      bottom: 80%;
+      left: 50%;
+      margin-left: -60px;
+    }
+
+    &:hover .tooltiptext {
+      visibility: visible;
+    }
+
+  }
+
 }

@@ -6,20 +6,33 @@ const Footer = () => {
     <div id="footer" className="footer-section">
       <section className="contacts">
         <div className="contact-container flex-row">
-          <div className="github">
-            <a href="https://github.com/BaturaAndrew">
-              for contact Batura Andrew
-            </a>
-          </div>
-          <div className="gmail">
-            <a href="mailto:baturaandrew@gmail.com">baturaandrew@gmail.com</a>
-          </div>
+          <a className="contact" href="https://github.com/BaturaAndrew">
+            <div className="github" />
+            <span> for contact Batura Andrew</span>
+          </a>
 
-          <div className="skype">
-            <a href="skype: batura_andrew">skype: batura_andrew</a>
-          </div>
-          <div className="phone">
-            mob: <em>+37529 263 72 22</em>
+          <a className="contact" href="mailto:baturaandrew@gmail.com">
+            <div className="gmail" />
+
+            <span> baturaandrew@gmail.com</span>
+          </a>
+
+          <a className="contact" href="skype: batura_andrew">
+            <div className="skype"></div>
+            <span>skype: batura_andrew</span>
+          </a>
+
+          <div className="contact">
+            <div className="tooltip">
+              <div className="phone" />
+              <div className="tooltiptext">+37529 263 72 22</div>
+            </div>
+            <span>
+              <div className="phone" />
+            </span>
+            <span>
+              mob: <em>+37529 263 72 22</em>
+            </span>
           </div>
         </div>
       </section>

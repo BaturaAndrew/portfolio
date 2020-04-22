@@ -7,10 +7,20 @@
 
   .about-me {
     justify-content: flex-start;
+
+    @media screen and (max-width: 750px) {
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+
     &__ava {
       margin: 50px 100px;
       width: 20%;
       filter: saturate(50%);
+
+      @media screen and (max-width: 750px) {
+        display: none;
+      }
     }
 
     &__text {
@@ -20,6 +30,12 @@
       font-size: 1.6vw;
       background-color: rgba(223, 241, 241, 0.2);
       border-radius: 4px;
+
+      @media screen and (max-width: 750px) {
+        width: 90%;
+        margin-top: 30px;
+        font-size: 15px;
+      }
     }
   }
 }
