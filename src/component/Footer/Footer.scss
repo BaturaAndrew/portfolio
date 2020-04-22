@@ -1,68 +1,63 @@
 .footer-section {
   width: 100%;
-  height: 100px;
+  // height: 100px;
   background: repeat url(./assets/bg_footer.gif);
 
   .contact-container {
     justify-content: flex-start;
+    flex-wrap: wrap;
     margin-left: 150px;
 
-    .contact__block {
-      padding: 0 20px;
+    .github,
+    .gmail,
+    .skype,
+    .phone {
+      margin: 25px;
+      color: white;
+      width:200px;
 
       a {
         color: white;
         text-decoration: none;
-      }
-
-      .github,
-      .gmail,
-      .skype,
-      .phone {
         margin-bottom: 5px;
-        color: white;
-
-        a {
-          text-decoration: none;
-          margin-bottom: 5px;
-          font-size: 0.8em;
-          margin-bottom: 5px;
-        }
-
-        &:hover {
-          cursor: pointer;
-        }
-
-        &:before {
-          position: relative;
-          left: 0px;
-          margin-right: 5px;
-          top: 8px;
-          filter: sepia();
-        }
-
-        &:hover:before {
-          filter: none;
-        }
-
+        font-size: 0.8em;
+        margin-bottom: 5px;
       }
 
-      .github:before {
-        content: url(./assets/images/contacts/github.png);
+      &:hover {
+        cursor: pointer;
       }
 
-      .gmail:before {
-        content: url(./assets/images/contacts/gmai32.png);
+      &:before {
+        position: relative;
+        left: 0px;
+        margin-right: 5px;
+        top: 8px;
+        filter: sepia();
       }
 
-      .skype:before {
-        content: url(./assets/images/contacts/skype32.png);
+      &:hover:before {
+        filter: none;
       }
 
-      .phone:before {
-        content: url(./assets/images/contacts/phone32.png);
-        margin-bottom: 20px;
-      }
     }
+
+    .github:before {
+      content: url(./assets/images/contacts/github.png);
+    }
+
+    .gmail:before {
+      content: url(./assets/images/contacts/gmai32.png);
+    }
+
+    .skype:before {
+      content: url(./assets/images/contacts/skype32.png);
+    }
+
+    .phone:before {
+      content: url(./assets/images/contacts/phone32.png);
+      margin-bottom: 20px;
+    }
+
   }
 }
