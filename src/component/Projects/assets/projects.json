@@ -1,5 +1,13 @@
 [
   {
+    "imgName": "portfolio",
+    "imgSrc": "portfolio.jpg",
+    "ginHub": "https://github.com/BaturaAndrew/portfolio",
+    "appLink": "https://baturaandrew.netlify.app/",
+    "title": "Portfolio",
+    "description": "..."
+  },
+  {
     "imgName": "piskel",
     "imgSrc": "piskel.jpg",
     "ginHub": "https://github.com/BaturaAndrew/simple-piskel-clone",

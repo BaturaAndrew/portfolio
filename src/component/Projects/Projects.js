@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import './Projects.scss';
 import {Divider} from 'antd';
-import CardProject from './Card/Card.js';
-
+import Card from './Card/Card.js';
 
 export default class Projects extends Component {
   state = {
@@ -16,17 +15,7 @@ export default class Projects extends Component {
         </Divider>
         <div className="projects-section flex-row">
           {this.state.projects.map(project => {
-            return (
-              <CardProject
-                key={project.imgName}
-                imgName={project.imgName}
-                imgSrc={project.imgSrc}
-                ginHub={project.ginHub}
-                appLink={project.appLink}
-                title={project.title}
-                description={project.description}
-              />
-            );
+            return <Card key={project.imgName} {...project} />;
           })}
         </div>
       </div>
