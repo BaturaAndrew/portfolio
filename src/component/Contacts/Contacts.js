@@ -38,7 +38,8 @@ export default class Contacts extends Component {
     }
 
     const from = `${this.state.name} <${this.state.from}>`;
-
+    const status = 'OK';
+    const name = '';
     axios({
       method: 'post',
       url:
@@ -46,19 +47,30 @@ export default class Contacts extends Component {
       params: {
         ...this.state,
         from,
+        status,
+        name,
       },
       auth: {
         username: 'api',
         password: 'key-b548a128042e38a00b25e582402cafae',
       },
-    }).then(rez =>
-      this.setState(
-        prevState => ({
-          ...prevState,
-          ...{status: rez},
-        }),
-        this.notification
-      )
+    }).then(
+      rez =>
+        this.setState(
+          prevState => ({
+            ...prevState,
+            ...{status: rez},
+          }),
+          this.notification
+        ),
+      error =>
+        this.setState(
+          prevState => ({
+            ...prevState,
+            ...{status: error},
+          }),
+          this.notification
+        )
     );
   };
 
@@ -66,7 +78,7 @@ export default class Contacts extends Component {
     if (this.state.status.status === 200) {
       message.success(this.state.status.data.message);
     } else {
-      message.error(this.state.status);
+      message.error(this.state.status.message);
     }
   };
 
@@ -75,12 +87,19 @@ export default class Contacts extends Component {
       <div id="contacts" className="contacts-section">
         <div className="divider">contacts</div>
 
+        <h2>
+          If you have any questions, send me an e-mail at
+          <a className="contact" href="mailto:baturaandrew@gmail.com">
+            <div className="gmail" />
+            <span> baturaandrew@gmail.com</span>
+          </a>
+          , or use <span>form</span> below.
+        </h2>
         <Form
           ref={this.form}
           className="form"
           layout="vertical"
           name="nest-messages">
-          <h2>Send me an email</h2>
           <Form.Item name="name" rules={[{required: true}]}>
             <Input
               placeholder="Name"
@@ -123,7 +142,7 @@ export default class Contacts extends Component {
 
           <Form.Item>
             <Button
-              className="send-btn"
+              className="send-btn flex-row"
               type="primary"
               htmlType="button"
               onClick={this.sendEmail}

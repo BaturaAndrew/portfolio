@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './App.scss';
 import Header from './Header';
 import About from './About/About';
 import Contacts from './Contacts/Contacts';
@@ -7,6 +6,7 @@ import Projects from './Projects/Projects';
 import Footer from './Footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import './App.scss';
 
 class App extends Component {
   componentDidMount() {
