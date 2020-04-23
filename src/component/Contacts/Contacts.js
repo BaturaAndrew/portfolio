@@ -9,13 +9,13 @@ export default class Contacts extends Component {
   constructor() {
     super();
     this.form = React.createRef();
-    this.state = {};
+    this.state = {to: 'baturaandrew@gmail.com'};
   }
 
   onChange = curState => {
     this.setState(prevState => ({
       ...prevState,
-      email: {...prevState.email, ...curState},
+      ...curState,
     }));
   };
 
@@ -37,18 +37,19 @@ export default class Contacts extends Component {
       return false;
     }
 
+    const from = `${this.state.name} <${this.state.from}>`;
+
     axios({
       method: 'post',
       url:
         'https://api.mailgun.net/v3/sandboxebf75d45a47a4a3d97e3563dea292e0d.mailgun.org/messages',
       params: {
-        from: 'mailgun@sandboxebf75d45a47a4a3d97e3563dea292e0d.mailgun.org',
-        to: 'engineer-think@tut.by',
-        subject: 'Hello',
-        text: 'Testing some Mailgun awesomeness!',
+        ...this.state,
+        from,
       },
-      headers: {
-        Authorization: 'api:key-b548a128042e38a00b25e582402cafae',
+      auth: {
+        username: 'api',
+        password: 'key-b548a128042e38a00b25e582402cafae',
       },
     });
 
@@ -77,19 +78,19 @@ export default class Contacts extends Component {
           <Form.Item name="name" rules={[{required: true}]}>
             <Input
               placeholder="Name"
-              onChange={e => this.onChange({to: e.target.value})}
+              onChange={e => this.onChange({name: e.target.value})}
             />
           </Form.Item>
 
           <Form.Item
-            name="email"
+            name="from"
             rules={[
               {type: 'email', message: 'Wrong email!'},
               {required: true, message: 'Please, enter email!'},
             ]}>
             <Input
               placeholder="Email"
-              onChange={e => this.onChange({to: e.target.value})}
+              onChange={e => this.onChange({from: e.target.value})}
             />
           </Form.Item>
 
@@ -103,14 +104,14 @@ export default class Contacts extends Component {
             ]}>
             <Input
               placeholder="Subject"
-              onChange={e => this.onChange({to: e.target.value})}
+              onChange={e => this.onChange({subject: e.target.value})}
             />
           </Form.Item>
 
           <Form.Item name="text">
             <Input.TextArea
               placeholder="Text"
-              onChange={e => this.onChange({to: e.target.value})}
+              onChange={e => this.onChange({text: e.target.value})}
             />
           </Form.Item>
 
