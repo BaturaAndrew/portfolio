@@ -7,24 +7,20 @@ const {Meta} = Card;
 
 const Project = props => {
   return (
-    // FIXME:  use a function instead of 'a' tag
-    // https://stackoverflow.com/questions/42561137/link-cannot-appear-as-a-descendant-of-a-link
-    <a
-      className="filter"
-      href={props.appLink}
-      target="_blank"
-      rel="noopener noreferrer">
+    <div className="filter flex-column">
       <Card
         data-aos="zoom-out-right"
         data-aos-duration="500"
         className="card"
         hoverable
         cover={
-          <img
-            className="card__img"
-            alt={props.imgName}
-            src={require(`../assets/images/${props.imgSrc}`)}
-          />
+          <a href={props.appLink} target="_blank" rel="noopener noreferrer">
+            <img
+              className="card__img"
+              alt={props.imgName}
+              src={require(`../assets/images/${props.imgSrc}`)}
+            />
+          </a>
         }
         actions={[
           <Button
@@ -40,9 +36,9 @@ const Project = props => {
             icon={<FundProjectionScreenOutlined />}
           />,
         ]}>
-        <Meta title={props.title} description={props.description} />
+        <Meta title={props.title} />
       </Card>
-    </a>
+    </div>
   );
 };
 export default Project;

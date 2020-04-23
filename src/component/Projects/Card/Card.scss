@@ -1,35 +1,41 @@
 .filter {
+  margin-right: 20px;
+  margin-bottom: 20px;
   filter: saturate(0.2);
 
   &:hover {
     filter: none;
   }
-}
 
-div.card {
-  width: 300px;
-  margin-right: 20px;
 
-  @media screen and (max-width: 400px) {
-    width: 90%;
-    margin-bottom: 20px;
+  div.card {
+    width: 300px;
+    border: 1px solid #a7a0a0;
+
+    .ant-card-cover img {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 400px) {
+      width: 80%;
+      margin-right: 0px;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: black;
+    }
+
+    a:hover {
+      color: blue;
+    }
+
+    &__img {
+      height: 90%;
+    }
+
+    .ant-card-actions>li:not(:last-child) {
+      border-right: 1px solid #7b7b7b;
+    }
   }
-
-  a {
-    color: black;
-  }
-
-  a:hover {
-    color: blue;
-  }
-
-  .ant-card-actions {
-    border-bottom: 2px solid #a7a0a0;
-  }
-
-  &__img {
-    height: 90%;
-  }
-
-
 }

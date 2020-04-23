@@ -5,11 +5,11 @@
   .contact-container {
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-left: 150px;
+    padding-left: 150px;
 
     @media screen and (max-width: 700px) {
       flex-wrap: nowrap;
-      margin-left: 20px;
+      padding-left: 20px;
     }
 
     .contact {
@@ -38,7 +38,7 @@
       .phone {
 
         @media screen and (max-width: 700px) {
-          margin: 10px;
+          margin: 0px;
         }
 
         &:hover {
@@ -84,7 +84,7 @@
     border-bottom: 1px dotted black;
 
     @media screen and (min-width: 700px) {
-       display: none;
+      display: none;
     }
 
     .tooltiptext {

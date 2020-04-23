@@ -73,34 +73,43 @@ export default class Contacts extends Component {
           className="form"
           layout="vertical"
           name="nest-messages">
-          <Form.Item name="name" label="Name" rules={[{required: true}]}>
-            <Input onChange={e => this.onChange({to: e.target.value})} />
+          <h2>Send me an email</h2>
+          <Form.Item name="name" rules={[{required: true}]}>
+            <Input
+              placeholder="Name"
+              onChange={e => this.onChange({to: e.target.value})}
+            />
           </Form.Item>
 
           <Form.Item
             name="email"
-            label="Email"
             rules={[
               {type: 'email', message: 'Wrong email!'},
               {required: true, message: 'Please, enter email!'},
             ]}>
-            <Input onChange={e => this.onChange({to: e.target.value})} />
+            <Input
+              placeholder="Email"
+              onChange={e => this.onChange({to: e.target.value})}
+            />
           </Form.Item>
 
           <Form.Item
             name="subject"
-            label="Subject"
             rules={[
               {
                 required: true,
                 message: 'Please, enter subject!',
               },
             ]}>
-            <Input onChange={e => this.onChange({to: e.target.value})} />
+            <Input
+              placeholder="Subject"
+              onChange={e => this.onChange({to: e.target.value})}
+            />
           </Form.Item>
 
-          <Form.Item name="text" label="Text">
+          <Form.Item name="text">
             <Input.TextArea
+              placeholder="Text"
               onChange={e => this.onChange({to: e.target.value})}
             />
           </Form.Item>
@@ -112,7 +121,7 @@ export default class Contacts extends Component {
               htmlType="button"
               onClick={this.sendEmail}
               icon={<SendOutlined />}>
-              Отправить
+              Send
             </Button>
           </Form.Item>
         </Form>
