@@ -13,7 +13,7 @@
 
   .profile-detail {
     margin: 0px;
-    margin-top: 200px;
+    margin-top: 260px;
     margin-bottom: 50px;
     width: 80%;
     text-align: center;
@@ -23,9 +23,7 @@
     -webkit-text-stroke: 0.1px #3a3a3a;
 
     @media screen and (max-width: 750px) {
-      [data-aos=zoom-out-right] {
-        transform: 0;
-      }
+      margin-top: 130px;
     }
 
     .name {

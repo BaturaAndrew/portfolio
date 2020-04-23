@@ -51,16 +51,22 @@ export default class Contacts extends Component {
         username: 'api',
         password: 'key-b548a128042e38a00b25e582402cafae',
       },
-    });
-
-    this.notification('Sended');
+    }).then(rez =>
+      this.setState(
+        prevState => ({
+          ...prevState,
+          ...{status: rez},
+        }),
+        this.notification
+      )
+    );
   };
 
-  notification = status => {
-    if (status.status === 200) {
-      message.success(status);
+  notification = () => {
+    if (this.state.status.status === 200) {
+      message.success(this.state.status.data.message);
     } else {
-      message.error(status);
+      message.error(this.state.status);
     }
   };
 
