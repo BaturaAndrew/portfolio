@@ -43,7 +43,7 @@ export default class Contacts extends Component {
     axios({
       method: 'post',
       url:
-        'https://api.mailgun.net/v3/sandboxebf75d45a47a4a3d97e3563dea292e0d.mailgun.org/messages',
+        'api',
       params: {
         ...this.state,
         from,
