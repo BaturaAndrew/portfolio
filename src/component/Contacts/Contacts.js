@@ -1,9 +1,9 @@
+/* eslint-disable no-undef */
+
 import React, {Component} from 'react';
 import './Contacts.scss';
 import {Form, Input, Button, message} from 'antd';
 import {SendOutlined} from '@ant-design/icons';
-
-import axios from 'axios';
 
 export default class Contacts extends Component {
   constructor() {
@@ -37,23 +37,14 @@ export default class Contacts extends Component {
       return false;
     }
 
-    const from = `${this.state.name} <${this.state.from}>`;
-    const status = 'OK';
-    const name = '';
-    axios({
-      method: 'post',
-      url:
-        'api',
-      params: {
-        ...this.state,
-        from,
-        status,
-        name,
-      },
-      auth: {
-        username: 'api',
-        password: 'key-b548a128042e38a00b25e582402cafae',
-      },
+    const from = `${this.state.name} ${this.state.from}`;
+
+    Email.send({
+      SecureToken: '014034f5-2e11-49d8-956f-eaf713e01ab9',
+      To: 'baturaandrew@gmail.com',
+      From: 'baturaandrew@gmail.com',
+      Subject: this.state.subject,
+      Body: from + ' ' + this.state.text,
     }).then(
       rez =>
         this.setState(
@@ -75,10 +66,10 @@ export default class Contacts extends Component {
   };
 
   notification = () => {
-    if (this.state.status.status === 200) {
-      message.success(this.state.status.data.message);
+    if (this.state.status === 'OK') {
+      message.success(this.state.status);
     } else {
-      message.error(this.state.status.message);
+      message.error(this.state.status);
     }
   };
 
