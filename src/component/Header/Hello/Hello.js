@@ -29,7 +29,7 @@ const Hello = () => {
         className="cv"
         type="link"
         target="_blank"
-        href="https://drive.google.com/open?id=1hkyVRZEgIJPPvPhPVTmjhMJaHwFXb_90">
+        href="https://drive.google.com/file/d/16gW1ohHBvyxBtS_b5qYVAsHIYnnNPTan/view?usp=sharing">
         link to my CV
       </Button>
     </div>

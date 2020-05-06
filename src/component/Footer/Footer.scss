@@ -35,8 +35,8 @@
       .github,
       .gmail,
       .skype,
-      .phone {
-
+      .phone,
+      .linkedin {
         @media screen and (max-width: 700px) {
           margin: 0px;
         }
@@ -69,6 +69,10 @@
 
     .skype:before {
       content: url(./assets/images/contacts/skype32.png);
+    }
+
+    .linkedin:before {
+      content: url(./assets/images/contacts/linkedin32.png);
     }
 
     .phone:before {

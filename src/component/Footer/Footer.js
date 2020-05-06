@@ -20,6 +20,12 @@ const Footer = () => {
             <div className="skype"></div>
             <span>skype: batura_andrew</span>
           </a>
+          <a
+            className="contact"
+            href="https://www.linkedin.com/in/андрей-батура-448249104/">
+            <div className="linkedin"></div>
+            <span>linkedin</span>
+          </a>
 
           <div className="contact">
             <div className="tooltip">

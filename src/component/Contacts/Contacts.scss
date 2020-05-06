@@ -22,29 +22,95 @@
     }
   }
 
-  .form {
-    min-width: 50px;
-    max-width: 450px;
-    margin: 30px;
-    margin-top: 10px;
-    background-color: rgb(100, 100, 100);
-    border-radius: 3px;
-    padding: 10px;
+  .contact__block {
+    align-items: flex-start;
+    justify-content: flex-start;
 
-    .send-btn {
-      background-color: #cedef7;
-      border: none;
-      color: black;
-      width: 100%;
-      justify-content: flex-start;
+    @media screen and (max-width: 850px) {
+      flex-direction: column;
+    }
 
-      span {
-        width: 30px;
+    .text-zone {
+      min-width: 250px;
+      max-width: 450px;
+      margin-left: 150px;
+
+      @media screen and (max-width: 850px) {
+        margin-left: 30px;
+        margin-bottom: 50px;
+      }
+
+      h1 {
+        font-size: 33px;
+        font-family: font-file-82132;
+        color: #06b197;
+        font-weight: 400;
+        line-height: 50px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        position: relative;
+        display: block;
+
+        .header {
+          cursor: pointer;
+          display: inline-block;
+          will-change: transform;
+          opacity: 0.5;
+          -webkit-transition: all .3s ease-out;
+          transition: all .3s ease-out;
+        }
+
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 20px;
+        color: #929090;
+        font-family: "Open Sans", sans-serif;
+
+
+        .skils {
+          cursor: pointer;
+          font-weight: bold;
+          color: #06b197;
+          display: inline-block;
+          will-change: transform;
+          opacity: 0.5;
+          -webkit-transition: all .1s linear;
+          transition: all .1s linear;
+        }
       }
     }
 
-    .send-btn:hover {
-      background-color: rgb(184, 179, 255);
+    .form {
+      min-width: 300px;
+      max-width: 450px;
+      margin: 30px;
+      margin-top: 10px;
+      background-color: rgb(100, 100, 100);
+      border-radius: 3px;
+      padding: 10px;
+
+      @media screen and (max-width: 350px) {
+        min-width: 270px;
+      }
+
+      .send-btn {
+        background-color: #cedef7;
+        border: none;
+        color: black;
+        width: 100%;
+        justify-content: flex-start;
+
+        span {
+          width: 30px;
+        }
+      }
+
+      .send-btn:hover {
+        background-color: rgb(184, 179, 255);
+      }
     }
   }
+
 }
