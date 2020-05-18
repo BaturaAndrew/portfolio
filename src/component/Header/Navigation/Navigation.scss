@@ -13,17 +13,10 @@ div.navigation {
     sans-serif;
 
   @media screen and (max-width: 750px) {
-    width: 100%;
     box-shadow: inset 0px -7px 15px 0px rgba(0, 0, 0, 0.5);
-  }
-
-  @media screen and (max-width: 350px) {
     font-size: 0.8rem;
   }
 
-  @media screen and (max-width: 400px) {
-    margin-right: 0px;
-  }
 
   &>a {
     margin: 0;

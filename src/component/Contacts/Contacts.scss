@@ -1,3 +1,5 @@
+@import './../varables';
+
 .contacts-section {
   width: 95%;
   margin: auto;
@@ -12,8 +14,9 @@
   h2 {
     margin-top: 25px;
     margin-left: 30px;
-    color: rgb(152, 146, 236);
-    font-size: 1.2em;
+    color: #0078e5;
+    opacity: 0.8;
+    font-size: 1.3em;
     max-width: 450px;
 
     span {
@@ -43,7 +46,7 @@
       h1 {
         font-size: 33px;
         font-family: font-file-82132;
-        color: #06b197;
+        color: $main-color;
         font-weight: 400;
         line-height: 50px;
         margin-top: 0;
@@ -72,7 +75,7 @@
         .skils {
           cursor: pointer;
           font-weight: bold;
-          color: #06b197;
+          color: $main-color;
           display: inline-block;
           will-change: transform;
           opacity: 0.5;

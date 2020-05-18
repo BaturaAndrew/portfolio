@@ -1,14 +1,16 @@
+
+@import 'varables';
+
 div.app {
   align-items: initial;
   background: url(../assets/images/bg.png);
 
   .divider {
-    color:#06b197;
+    color: $main-color;
     opacity: 0.5;
     font-size: 30px;
     margin-top: 15px;
     margin-left: 20px;
-    text-decoration: underline;
     font-family: 'TitilliumWeb',
       sans-serif;
     font-weight: bolder;

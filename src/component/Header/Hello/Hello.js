@@ -24,9 +24,9 @@ const Hello = () => {
         </p>
       </div>
       <Button
+        className="button-cv cv"
         data-aos="zoom-out"
         data-aos-duration="500"
-        className="cv"
         type="link"
         target="_blank"
         href="https://drive.google.com/file/d/16gW1ohHBvyxBtS_b5qYVAsHIYnnNPTan/view?usp=sharing">

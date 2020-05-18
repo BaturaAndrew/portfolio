@@ -161,7 +161,7 @@ export default class Contacts extends Component {
               />
             </Form.Item>
 
-            <Form.Item>
+            <Form.Item name="btn">
               <Button
                 className="send-btn flex-row"
                 type="primary"
