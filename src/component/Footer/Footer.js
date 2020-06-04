@@ -27,18 +27,12 @@ const Footer = () => {
             <span>linkedin</span>
           </a>
 
-          <div className="contact">
-            <div className="tooltip">
-              <div className="phone" />
-              <div className="tooltiptext">+37529 263 72 22</div>
-            </div>
-            <span>
-              <div className="phone" />
-            </span>
+          <a className="contact" href="tel:+37529 263 72 22">
+            <div className="phone" />
             <span>
               mob: <em>+37529 263 72 22</em>
             </span>
-          </div>
+          </a>
         </div>
       </section>
     </div>
