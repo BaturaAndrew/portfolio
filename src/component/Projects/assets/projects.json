@@ -32,6 +32,14 @@
     "description": "..."
   },
   {
+    "imgName": "repair-design",
+    "imgSrc": "repair.jpg",
+    "ginHub": "https://github.com/BaturaAndrew/repair-design-project",
+    "appLink": "https://repairdesignproject.netlify.app",
+    "title": "Repair Design Project",
+    "description": "..."
+  },
+  {
     "imgName": "ticTacToe",
     "imgSrc": "tic-tac-toe.jpg",
     "ginHub": "https://github.com/BaturaAndrew/tic_tac_toe",
