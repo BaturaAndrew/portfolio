@@ -102,77 +102,78 @@ export default class Contacts extends Component {
       <div id="contacts" className="contacts-section">
         <div className="divider">contacts</div>
 
-        <h2>
-          If you have any questions, send me an e-mail at
-          <a className="contact" href="mailto:baturaandrew@gmail.com">
-            <div className="gmail" />
-            <span> baturaandrew@gmail.com</span>
-          </a>
-          , or use <span>form</span> below.
-        </h2>
         <div className="contact__block flex-row">
-          <Form
-            ref={this.form}
-            className="form"
-            layout="vertical"
-            name="nest-messages">
-            <Form.Item
-              name="name"
-              rules={[{required: true, message: 'Please, enter name!'}]}>
-              <Input
-                placeholder="Name"
-                onChange={e => this.onChange({name: e.target.value})}
-              />
-            </Form.Item>
+          <div>
+            <h2>
+              If you have any questions, send me an e-mail at
+              <a className="contact" href="mailto:baturaandrew@gmail.com">
+                <div className="gmail" />
+                <span> baturaandrew@gmail.com</span>
+              </a>
+              , or use <span>form</span> below.
+            </h2>
+            <Form
+              ref={this.form}
+              className="form"
+              layout="vertical"
+              name="nest-messages">
+              <Form.Item
+                name="name"
+                rules={[{required: true, message: 'Please, enter name!'}]}>
+                <Input
+                  placeholder="Name"
+                  onChange={e => this.onChange({name: e.target.value})}
+                />
+              </Form.Item>
 
-            <Form.Item
-              name="from"
-              rules={[
-                {type: 'email', message: 'Wrong email!'},
-                {
-                  required: true,
-                  message: 'Please, enter email!',
-                },
-              ]}>
-              <Input
-                placeholder="Email"
-                onChange={e => this.onChange({from: e.target.value})}
-              />
-            </Form.Item>
+              <Form.Item
+                name="from"
+                rules={[
+                  {type: 'email', message: 'Wrong email!'},
+                  {
+                    required: true,
+                    message: 'Please, enter email!',
+                  },
+                ]}>
+                <Input
+                  placeholder="Email"
+                  onChange={e => this.onChange({from: e.target.value})}
+                />
+              </Form.Item>
 
-            <Form.Item
-              name="subject"
-              rules={[
-                {
-                  required: true,
-                  message: 'Please, enter subject!',
-                },
-              ]}>
-              <Input
-                placeholder="Subject"
-                onChange={e => this.onChange({subject: e.target.value})}
-              />
-            </Form.Item>
+              <Form.Item
+                name="subject"
+                rules={[
+                  {
+                    required: true,
+                    message: 'Please, enter subject!',
+                  },
+                ]}>
+                <Input
+                  placeholder="Subject"
+                  onChange={e => this.onChange({subject: e.target.value})}
+                />
+              </Form.Item>
 
-            <Form.Item name="text">
-              <Input.TextArea
-                placeholder="Text"
-                onChange={e => this.onChange({text: e.target.value})}
-              />
-            </Form.Item>
+              <Form.Item name="text">
+                <Input.TextArea
+                  placeholder="Text"
+                  onChange={e => this.onChange({text: e.target.value})}
+                />
+              </Form.Item>
 
-            <Form.Item name="btn">
-              <Button
-                className="send-btn flex-row"
-                type="primary"
-                htmlType="button"
-                onClick={this.sendEmail}
-                icon={<SendOutlined />}>
-                Send
-              </Button>
-            </Form.Item>
-          </Form>
-
+              <Form.Item name="btn">
+                <Button
+                  className="send-btn flex-row"
+                  type="primary"
+                  htmlType="button"
+                  onClick={this.sendEmail}
+                  icon={<SendOutlined />}>
+                  Send
+                </Button>
+              </Form.Item>
+            </Form>
+          </div>
           <div className="text-zone">
             <h1 aria-label=" Skills">
               <span
